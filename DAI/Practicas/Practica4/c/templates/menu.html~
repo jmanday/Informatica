@@ -1,0 +1,37 @@
+<div id="header">
+	<div class="connect">
+		<p>
+		Para obtener consejo legal: ${varMako["correo"]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${varMako["usuario"]}
+		</p>
+	</div>
+	<div>
+		<a href="/" class="logo"><img src="static/images/logo.png" alt=""></a>
+			<ul>
+				<li class="selected">
+					<a href="/">Inicio</a>
+				</li>
+				<li>
+					${varMako["registro"]}
+				</li>
+				<li>
+					${varMako["login"]}
+				</li>
+				<li>
+					${varMako["historial"]}
+				</li>
+				<li>
+					${varMako["busqueda"]}
+				</li>
+				<li>
+					${varMako["rss"]}
+				</li>
+				<li>
+					${varMako["ingresos"]}
+				</li>
+				<li>
+					${varMako["sedes"]}
+				</li>
+			</ul>
+	</div>
+</div>

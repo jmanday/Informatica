@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<%include file="cabecera.html" />
+<body>
+	<div class="page">
+		<%include file="menu.html" />
+		<div id="body">		
+			<div class="footer">
+				<div>
+					<div align="center">
+						<h2>Estados en Twitter</h2>
+						<div>
+							<p>
+								<form method="POST">
+									<div class="ident">
+										<p>${var1[0]["fecha"]}</p>
+										<p>${var1[0]["usuario"]}</p>
+										<p>${var1[0]["texto"]}</p>
+										<p>${var1[0]["salto"]}</p>
+									</div>
+									<div class="ident">
+										<p>${var1[1]["fecha"]}</p>
+										<p>${var1[1]["usuario"]}</p>
+										<p>${var1[1]["texto"]}</p>
+										<p>${var1[1]["salto"]}</p>
+									</div>
+								</form>
+								<br><br>
+							</p>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<%include file="pie.html" />
+	</div>
+</body>
+</html>

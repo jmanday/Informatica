@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<%include file="cabecera.html" />
+<script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+		<script>
+			
+   			google.load("visualization", "1", {packages:["corechart"]});
+   			google.setOnLoadCallback(dibujarGrafico);
+   			function dibujarGrafico() {
+    	 		// Tabla de datos: valores y etiquetas de la gráfica
+    	 		var data = google.visualization.arrayToDataTable([
+					['Idioma', 'Porcentaje'],
+					['${var1[0]['idioma']}', ${var1[0]["cantidad"]}],
+					['${var1[1]['idioma']}', ${var1[1]["cantidad"]}],
+					['${var1[2]['idioma']}', ${var1[2]["cantidad"]}],
+					['${var1[3]['idioma']}', ${var1[3]["cantidad"]}],
+					['${var1[4]['idioma']}', ${var1[4]["cantidad"]}],
+					['${var1[5]['idioma']}', ${var1[5]["cantidad"]}]
+				]);
+	
+    	 		var options = {
+    	   			title: 'Idioma del tweet'
+    	 		}
+
+				
+				// Dibujar el gráfico
+    			new google.visualization.PieChart( 
+    	 			//ColumnChart sería el tipo de gráfico a dibujar
+    	  	 		document.getElementById("grafica")
+    	 		).draw(data, options);
+				
+   			}
+ 		</script>
+<body>
+	<div class="page">
+		<%include file="menu.html" />
+		
+		<div id="body">		
+			<div align="center">
+				<div id="grafica" style="width: 600px; height: 400px; is3D: true; float: center"></div>
+			</div>		
+		</div><br><br><br><br>
+		<%include file="pie.html" />
+	</div>
+</body>
+</html>

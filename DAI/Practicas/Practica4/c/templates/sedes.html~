@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<%include file="cabecera.html" />
+<body>
+	<div class="page">
+		<%include file="menu.html" />
+		
+		<div id="body">		
+			<div align="center">
+				<iframe width="500" height="300" scrolling="no" frameborder="no" 
+src="https://www.google.com/fusiontables/embedviz?q=select+col5	+from      +1AJPtNrfJfzhbBuUbLH2Mfw_1GwleCRe0pcB77lM&amp;viz=MAP&amp;h=false&amp;lat=36.87652231575901&amp;lng=-5.112864414062415&amp;t=1&amp;z=8&amp;l=col5&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG">
+				</iframe>
+			</div>		
+		</div><br><br><br><br>
+		<%include file="pie.html" />
+	</div>
+</body>
+</html>

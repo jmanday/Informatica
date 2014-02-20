@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<%include file="cabecera.html" />
+<body>
+	<div class="page">
+		<%include file="menu.html" />
+		<div id="body">		
+			<div class="footer">
+				<div>
+					<div align="center">
+						<h2>Twitter</h2>
+						<div>
+							<p>
+								<div class="ident">
+									<p><a href="nuevo_estado_twitter">Cambiar el estado</a></p>
+								</div>
+							</p>
+							<p>
+								<div class="ident">
+									<p><a href="buscar_contenido_twitter">Buscar un contenido</a></p>
+								</div>
+							</p>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<%include file="pie.html" />
+	</div>
+</body>
+</html>

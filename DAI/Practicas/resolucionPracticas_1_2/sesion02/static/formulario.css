@@ -1,0 +1,32 @@
+table {
+  padding: 0.5em;
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  box-shadow: 0.3em 0.3em 0.15em #333333;
+  color: #aaaaaa; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  text-align: right; 
+  font-size: 0.9em;
+  font-variant: small-caps;
+}
+
+input[type="text"] {
+  border-radius: 0.5em; 
+  box-shadow: 0.3em 0.3em 0.15em #333333;
+}
+
+button {
+  border-radius: 0.5em; 
+  box-shadow: 0.3em 0.3em 0.15em #333333;
+  font-weight: bold;
+}
+
+select {
+  border-radius: 0.5em; 
+  box-shadow: 0.3em 0.3em 0.15em #333333;
+  width: 150px;
+}

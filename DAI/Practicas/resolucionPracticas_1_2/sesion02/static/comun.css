@@ -1,0 +1,42 @@
+body {
+  padding: 1em;
+  margin: 1em;
+  margin-left: 5em;
+  margin-right: 5em;
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em 0.15em #333333;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #aaaaaa; 
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 0.05em 0.05em 0.1em #444444;
+}
+
+.pImg {
+  text-align: center;
+  font-size: 0.65em;
+}
+
+.pImg img {
+  border: 1px solid #aaaaaa; 
+  border-radius: 0.5em;
+  box-shadow: 0.3em 0.3em 0.15em #333333;
+  margin: 0.5em;
+}
+
+a {
+  font-weight: bold;
+  text-shadow: 0.05em 0.05em 0.05em #808080;
+}
+a:link {color: #990000;}      /* unvisited link */
+a:visited {color: #cc0000;}  /* visited link */
+a:hover {color: #990000;}  /* mouse over link */
+a:active {color: #cc0000;}  /* selected link */
+
+code {
+  color: #cc0000;
+  font-weight: bold;
+}

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# -*- coding: utf-18 -*-
+
+from lxml import etree
+import re
+import sys
+import urllib
+import feedparser		# libreria para rss remotos
+
+python_wiki_rss_url = "http://ep00.epimg.net/rss/elpais/portada.xml"
+
+feed = feedparser.parse(python_wiki_rss_url)
+
+for i in feed:
+	print i.text

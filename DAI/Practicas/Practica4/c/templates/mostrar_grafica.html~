@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<%include file="cabecera.html" />
+	
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+		<script>
+			
+   			google.load("visualization", "1", {packages:["corechart"]});
+   			google.setOnLoadCallback(dibujarGrafico);
+   			function dibujarGrafico() {
+    	 		// Tabla de datos: valores y etiquetas de la gráfica
+    	 		var data = google.visualization.arrayToDataTable([
+					['Valor de ingreso', 'Porcentaje'],
+					['1000', ${datos_tabla[0]}],
+					['1100', ${datos_tabla[1]}],
+					['1200', ${datos_tabla[2]}],
+					['1300', ${datos_tabla[3]}],
+					['1400', ${datos_tabla[4]}],
+					['1500', ${datos_tabla[5]}],
+					['1600', ${datos_tabla[6]}],
+					['1700', ${datos_tabla[7]}],
+					['1800', ${datos_tabla[8]}],
+					['1900', ${datos_tabla[9]}],
+					['2000', ${datos_tabla[10]}]
+				]);
+	
+    	 		var options = {
+    	   			title: 'Ingresos'
+    	 		}
+
+				switch('${vardatos['tipo_grafica']}') {
+
+					case "barras":    	 
+						// Dibujar el gráfico
+    					new google.visualization.ColumnChart( 
+    	 					//ColumnChart sería el tipo de gráfico a dibujar
+    	  	 				document.getElementById("grafica")
+    	 				).draw(data, options);
+						break;
+			
+					case "tarta":
+						// Dibujar el gráfico
+    					new google.visualization.PieChart( 
+    	 					//ColumnChart sería el tipo de gráfico a dibujar
+    	  	 				document.getElementById("grafica")
+    	 				).draw(data, options);
+						break;
+
+					default:
+						break;
+				}
+   			}
+ 		</script>
+<body>
+	<div class="page">
+		<%include file="menu.html" />
+		
+		<div id="body">		
+			<div align="center">
+				<div id="grafica" style="width: 600px; height: 400px; is3D: true; float: center"></div>
+			</div>		
+		</div><br><br><br><br>
+		<%include file="pie.html" />
+	</div>
+</body>
+</html>

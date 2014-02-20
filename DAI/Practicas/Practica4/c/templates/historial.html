@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<%include file="cabecera.html" />
+<body>
+	<div class="page">
+		<%include file="menu.html" />
+		<div id="body">		
+			<div class="footer">
+				<div>
+					<div align="center">
+						<h2>Historial de navegación</h2>
+						<div>
+							<p>
+								<form method="POST">
+									<div class="ident">
+										<ul>
+											<li class="selected">
+												${vhistory["h1"]}
+											</li>
+											<li class="selected">
+												${vhistory["h2"]}
+											</li>
+											<li class="selected">
+												${vhistory["h3"]}
+											</li>
+										</ul>
+									</div>
+								</form>
+								<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%include file="pie.html" />
+	</div>
+</body>
+</html>

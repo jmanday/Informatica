@@ -1,0 +1,59 @@
+	<head>
+		<meta charset="UTF-8">
+		<title>Bufete de abogados</title>
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">
+		${resultado}
+    	<script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+		<script>
+		
+   			google.load("visualization", "1", {packages:["corechart"]});
+   			google.setOnLoadCallback(dibujarGrafico);
+   			function dibujarGrafico() {
+    	 		// Tabla de datos: valores y etiquetas de la gráfica
+    	 		var data = google.visualization.arrayToDataTable([
+					['Texto', 'Valor numérico'],
+					['Texto1', 20.21],
+					['Texto2', 4.28],
+					['Texto3', 17.26],
+					['Texto4', 10.25]
+				]);
+
+    	 		var options = {
+    	   			title: 'Ingresos'
+    	 		}
+     
+				// Dibujar el gráfico
+    			new google.visualization.PieChart( 
+    	 			//PieChart sería el tipo de gráfico a dibujar
+    	  	 		document.getElementById('tarta')
+    	 		).draw(data, options);
+   			}
+ 		</script> 
+
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+		<script>
+			
+   			google.load("visualization", "1", {packages:["corechart"]});
+   			google.setOnLoadCallback(dibujarGrafico);
+   			function dibujarGrafico() {
+    	 		// Tabla de datos: valores y etiquetas de la gráfica
+    	 		var data = google.visualization.arrayToDataTable([
+					['Texto', 'Valor numérico'],
+					['Te1', 20.21],
+					['Te2', 4.28],
+					['Te3', 17.26],
+					['Te4', 10.25]
+				]);
+	
+    	 		var options = {
+    	   			title: 'Ingresos'
+    	 		}
+    	 
+				// Dibujar el gráfico
+    			new google.visualization.ColumnChart( 
+    	 			//ColumnChart sería el tipo de gráfico a dibujar
+    	  	 		document.getElementById('barras')
+    	 		).draw(data, options);
+   			}
+ 		</script>
+  	</head>

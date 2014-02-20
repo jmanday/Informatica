@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<%include file="cabecera.html" />
+
+<script type="text/javascript">
+ 
+     function localizar()
+      {
+        navigator.geolocation.getCurrentPosition(ubicacion,error);
+      }
+ 
+     function ubicacion(posicion)
+      {
+        var contenedor = document.getElementById("mapa");
+ 
+        var latitud = posicion.coords.latitude;
+        var longitud = posicion.coords.longitude;
+        var precision = posicion.coords.accuracy;
+ 
+          alert("Lat="+latitud+" - Long="+longitud+" - Precision="+precision);
+       }
+ 
+      function error(error)
+       {
+         if(error.code == 0)
+            alert("Error Desconocido");
+         else if(error.code == 1)
+            alert("No fue posible contactarte");
+         else if(error.code == 2)
+            alert("No hay una ubicacion disponible");
+         else if(error.code == 3)
+            alert("Tiempo agotado");
+        else
+            alert("Error Desconocido");
+        }
+    </script>
+<body>
+	<div class="page">
+		<%include file="menu.html" />
+		<div id="body">		
+			<div class="footer">
+				<div>
+					<div align="center">
+						<h2>Ubicacion del usuario</h2>
+						<div id="localizar()"></div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<%include file="pie.html" />
+	</div>
+</body>
+</html>

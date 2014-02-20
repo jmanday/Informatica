@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+
+import re
+import web
+import tweepy
+
+peticion=  tweepy.api.search(q="*", rpp=100, lang='es')
+
+for tweets in peticion:
+    if tweets.geo:
+        y= tweets.geo['coordinates'][0]
+        x= tweets.geo['coordinates'][1]
+        texto= unicode(tweets.text)
+        tw_id=tweets.id
+        lang=str(tweets.iso_language_code)
+
+        print x, y, unicode(texto), tw_id

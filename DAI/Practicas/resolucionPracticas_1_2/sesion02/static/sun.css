@@ -1,0 +1,31 @@
+/*
+# Practicas de Desarrollo de Aplicaciones para Internet (DAI)
+# Copyright (C) 2013 - Zerjillo (zerjioi@ugr.es)
+#    
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#   
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#   
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body {
+/* Creado con http://www.colorzilla.com */
+  background: #542400; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #542400 0%, #8e5009 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#542400), color-stop(100%,#8e5009)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #542400 0%,#8e5009 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #542400 0%,#8e5009 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #542400 0%,#8e5009 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #542400 0%,#8e5009 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#542400', endColorstr='#8e5009',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
