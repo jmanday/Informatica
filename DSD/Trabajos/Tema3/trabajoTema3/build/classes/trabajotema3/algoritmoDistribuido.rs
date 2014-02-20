@@ -1,0 +1,5 @@
+algoritmoDistribuido$3
+algoritmoDistribuido$2
+algoritmoDistribuido$1
+algoritmoDistribuido
+algoritmoDistribuido$4

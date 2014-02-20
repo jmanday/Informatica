@@ -1,0 +1,3 @@
+ventana_no_texto$2
+ventana_no_texto$1
+ventana_no_texto
