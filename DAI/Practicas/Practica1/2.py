@@ -19,6 +19,7 @@ def cronometro(funcion):
    return funcion_a_ejecutar
 
 
+
 def burbuja(v):
 	""" Esta funcion ordena un vector utilizando el metodo burbuja """
 	for i in range(0,len(v)-1):
