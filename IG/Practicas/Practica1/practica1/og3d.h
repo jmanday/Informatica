@@ -11,6 +11,7 @@ Jesús García Manday
 #include <vector>
 #include "vertex.h"
 
+
 using namespace std;
 
 class og3d{
